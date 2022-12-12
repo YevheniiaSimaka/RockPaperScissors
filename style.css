@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&family=Inknut+Antiqua:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(206, 206, 206);
+    background-color: var(--lightBlue);
+}
+
+:root {
+    --darkPurple: #6C4AB6;
+    --purple: #8D72E1;
+    --blue: #8D9EFF;
+    --lightBlue: #B9E0FF;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    max-width: 1200px;
+    background-color: var(--lightBlue);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.leftRight {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: inherit;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .paper,
+.right .rock,
+.right .scissors {
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Devonshire';
+    font-size: 3rem;
+    color: #6C4AB6;
+}
+
+.gameName {
+    font-family: 'Devonshire';
+    color: #6C4AB6;
+    margin-bottom: 1rem;
+    font-size: 3.25rem;
+}
+
+.row {
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.paper,
+.rock,
+.scissors {
+    margin: 0 1rem;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.47), 0 0 0.5rem rgba(0, 0, 0, 0.338);
+    padding: 0.5rem;
+    width: 6rem;
+}
+
+.paper img,
+.rock img,
+.scissors img {
+    width: 100%;
+    border-radius: 2rem;
+    background-color: transparent;
+}
+
+.message {
+    font-family: 'Inknut Antiqua';
+    color: #6c79c1;
+    font-size: 1.25rem;
+}
+
+/*   GOODBYE    */
+
+
+.cool {
+    text-align: center;
+    font-size: 1rem;
+    margin: 35px;
+    border-radius: 15px;
+    box-shadow: inset 3px 6px 15px #0000007d, 0 0 0.25rem #6c4ab66f;
+    background-color: transparent;
+    color: var(--darkPurple);
+    text-transform: uppercase;
+    padding: 0.25rem 1rem;
+    color: #7380c6;
+    transition: 0.5s ease;
+}
+
+.cool:hover {
+    box-shadow: inset 0 0 0.75rem #8D72E1, 0 0 0.5rem #6C4AB6;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Inknut Antiqua';
+}
+
+.happy,
+.sad,
+.mad {
+    display: none;
+    position: relative;
+    width: 20vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    bottom: -20%;
+}

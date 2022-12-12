@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="all">
+
+        <h1 class="gameName">Rock Paper Scissors...</h1>
+
+        <div class="leftRight">
+
+            <div class="left">
+
+                <h1 class="header">Robot</h1>
+
+                <div class="row">
+
+                    <div class="paper">
+                        <img src="img/paper.png" alt="">
+                    </div>
+
+                    <div class="rock">
+                        <img src="img/rock.png" alt="">
+                    </div>
+
+                    <div class="scissors">
+                        <img src="img/scissors.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="middle">
+                <img src="img/happy.png" class="happy" alt="">
+                <img src="img/sad.png" class="sad" alt="">
+                <img src="img/mad.png" alt="" class="mad">
+            </div>
+
+            <div class="right">
+
+                <h1 class="header">You</h1>
+
+                <div class="row">
+
+                    <div class="paper" onclick="paperChoice()">
+                        <img src="img/paper.png" alt="">
+                    </div>
+
+                    <div class="rock" onclick="rockChoice()">
+                        <img src="img/rock.png" alt="">
+                    </div>
+
+                    <div class="scissors" onclick="scissorsChoice()">
+                        <img src="img/scissors.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="open">
+
+            <h2 class="message"></h2>
+            <br>
+            <a href="index.html" class="cool">RESTART</a>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
